@@ -8,13 +8,4 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'app';
-  currentStep = 1;
-  public getCurrentStep(navigationValue:string){
-    if(navigationValue === "previous"){
-      this.currentStep -= 1;
-    }
-    else {
-      this.currentStep += 1;
-    }
-  }
 }

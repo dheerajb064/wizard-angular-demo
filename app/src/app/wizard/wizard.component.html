@@ -1,7 +1,7 @@
-<div class="current">
+<div class="wizard">
     <ng-content></ng-content>
     <div class="navigationButtons">
-        <button (click)="moveBack()">Prev</button>
-        <button (click)="moveFront()">Next</button>
+        <button (click)="moveBack()" [disabled]="currentStepIndex===0">Prev</button>
+        <button (click)="moveFront()" [disabled]="currentStepIndex === steps.length - 1">Next</button>
     </div>
 </div>
