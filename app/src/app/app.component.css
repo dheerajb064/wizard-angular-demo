@@ -1,0 +1,84 @@
+/* app.component.css */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Set background color for the wizard container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333; /* Set color for the main title */
+  }
+  
+  /* Wizard Step Styling */
+  .wizard-step {
+    display: none;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .wizard-step.active {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #007bff; /* Set color for step titles */
+  }
+  
+  .step-content {
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styling (example) */
+  form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Navigation Button Styling */
+  .wizard-controls {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .wizard-controls button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .wizard-controls button:hover {
+    background-color: #0056b3;
+  }
+  
+  .wizard-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

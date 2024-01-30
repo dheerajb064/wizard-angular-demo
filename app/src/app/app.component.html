@@ -1,6 +1,65 @@
-<app-wizard>
-   <app-wizard-step [active]="true">Step 1 content goes here....</app-wizard-step> 
-   <app-wizard-step>Step 2</app-wizard-step> 
-   <app-wizard-step>Step 3</app-wizard-step> 
-   <app-wizard-step>Step 4</app-wizard-step> 
-</app-wizard>
+<div class="container">
+  <h1>Multi-step Wizard</h1>
+  <app-wizard>
+    <app-wizard-step [active]="true">
+      <h2>Step 1: Personal Information</h2>
+      <div class="step-content">
+        <!-- Your personal information form goes here -->
+        <form>
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required />
+
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required />
+
+          <!-- Other input fields for personal information -->
+        </form>
+      </div>
+    </app-wizard-step>
+    <app-wizard-step>
+      <h2>Step 2: Address Details</h2>
+      <div class="step-content">
+        <!-- Your address details form goes here -->
+        <form>
+          <label for="street">Street:</label>
+          <input type="text" id="street" name="street" required />
+
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required />
+
+          <!-- Other input fields for address details -->
+        </form>
+      </div></app-wizard-step
+    >
+    <app-wizard-step>
+      <h2>Step 3: Payment Information</h2>
+      <div class="step-content">
+        <!-- Your payment information form goes here -->
+        <form>
+          <label for="cardNumber">Card Number:</label>
+          <input type="text" id="cardNumber" name="cardNumber" required />
+
+          <label for="expiryDate">Expiry Date:</label>
+          <input type="text" id="expiryDate" name="expiryDate" required />
+
+          <!-- Other input fields for payment information -->
+        </form>
+      </div></app-wizard-step
+    >
+    <app-wizard-step>
+      <h2>Step 4: Confirmation</h2>
+      <div class="step-content">
+        <!-- Your confirmation details go here -->
+        <p>Please review your information before submitting:</p>
+        <ul>
+          <li>First Name: John</li>
+          <li>Last Name: Doe</li>
+          <li>Street: 123 Main St</li>
+          <li>City: Anytown</li>
+          <li>Card Number: **** **** **** 1234</li>
+          <li>Expiry Date: 12/24</li>
+        </ul>
+      </div></app-wizard-step
+    >
+  </app-wizard>
+</div>
