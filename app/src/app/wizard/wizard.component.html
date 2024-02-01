@@ -1,4 +1,10 @@
 <div class="wizard">
+    <div class="stepper">
+        <div *ngFor="let step of steps; let i = index" class="step" [class.active]="i === currentStepIndex">
+          <span class="step-icon">{{ i + 1 }}</span>
+          <span class="step-title">Step {{ i + 1 }}</span>
+        </div>
+      </div>
     <div class="wizard-content">
         <ng-content></ng-content>
     </div>

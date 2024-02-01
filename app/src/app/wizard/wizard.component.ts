@@ -7,6 +7,7 @@ import { WizardStepComponent } from '../wizard-step/wizard-step.component';
   styleUrl: './wizard.component.css'
 })
 export class WizardComponent implements AfterContentInit{
+  
   @ContentChildren(WizardStepComponent) steps : QueryList<WizardStepComponent> = new QueryList<WizardStepComponent>();
   currentStepIndex : number = 0;
   ngAfterContentInit(): void {
